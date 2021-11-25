@@ -1,6 +1,6 @@
 function lister(){
-    var formFilm = "dataEnvoye";
-  
+	var formFilm = new FormData();
+	formFilm.append('action','lister');
     $.ajax({
         type : 'POST',
 		url : 'db/Films/filmsControleur.php',
@@ -15,6 +15,6 @@ function lister(){
   
 		} 
     });
-    alert(rep);
    
+ 
 }
